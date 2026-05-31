@@ -1,0 +1,22 @@
+name   名称:生锈   名字: Rust
+
+on   :   :   在:
+  push   推动   推动:   推动::   推:
+    branches   branches   分支机构   branches   branches: [ "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master" ]: [ "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master" ]: [ "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master" ]: [ "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master" ]
+  pull_request:
+    branches   branches   分支机构   branches   branches: [ "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master" ]: [ "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master" ]: [ "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master" ]: [ "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master"   "master" ]
+
+env:
+  CARGO_TERM_COLOR   CARGO_TERM_COLOR：始终   CARGO_TERM_COLOR：始终   CARGO_TERM_COLOR：始终: always
+
+jobs   工作   工作:   工作::   工作:
+  build   构建   构建:   构建::   构建:
+
+    runs-on   运行于：ubuntu-latest   运行在   运行于：ubuntu-latest   运行于：ubuntu-latest: ubuntu-latest
+
+    steps   步骤   步骤:   步骤::   步骤:
+    - - 使用：actions/checkout@v4- 使用：actions/checkout@v4- 使用：actions/checkout@v4uses: actions/checkout@v4
+    -          -名称：Build-名称：Build-名称：Buildname: Build
+      run运行：cargo build --verbose   运行运行：cargo build --verbose运行：cargo build --verbose: cargo build --verbose
+    -          —name：运行测试—name：运行测试—name：运行测试name: Run tests
+      run运行：cargo test --verbose   运行运行：cargo test --verbose运行：cargo test --verbose: cargo test --verbose
